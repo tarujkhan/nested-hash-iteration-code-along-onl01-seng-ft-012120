@@ -24,7 +24,9 @@ require 'pry'
 
 def remove_strawberry(contacts) 
   contacts.each do |user,data| 
-    ice_cream = data.keys[2] ice_cream_arr = contacts[user][ice_cream] count = 0 
+    ice_cream = data.keys[2] 
+    ice_cream_arr = contacts[user][ice_cream] 
+    count = 0 
     while count < ice_cream_arr.length 
     ice_cream_arr.delete_at(count) if ice_cream_arr[count] == "strawberry" count += 1 
     end 
