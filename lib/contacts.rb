@@ -28,7 +28,9 @@ def remove_strawberry(contacts)
     ice_cream_arr = contacts[user][ice_cream] 
     count = 0 
     while count < ice_cream_arr.length 
-    ice_cream_arr.delete_at(count) if ice_cream_arr[count] == "strawberry" count += 1 
+    ice_cream_arr.delete_at(count) 
+    if ice_cream_arr[count] == "strawberry" 
+      count += 1 
     end 
     end 
     end
