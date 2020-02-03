@@ -14,6 +14,24 @@ require 'pry'
   #   }
   # }
   
-def remove_strawberry(contacts)
+#def remove_strawberry(contacts)
+ # contacts.each do |person, contact_details_hash|
+  #  if person == "Freddy Mercury"
+   # contact_details_hash.each do |attribute, data|
+#binding.pry
+#end
+#end
 
-end
+def remove_strawberry(contacts) 
+  contacts.each do |user,data| 
+    ice_cream = data.keys[2] 
+    ice_cream_arr = contacts[user][ice_cream] 
+    count = 0 
+    while count < ice_cream_arr.length 
+    ice_cream_arr.delete_at(count) 
+    if ice_cream_arr[count] == "strawberry" 
+      count += 1 
+    end 
+    end 
+    end
+  end
